@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&family=Stylish&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Stylish', sans-serif;
+}
+.container{
+    display:grid;
+    place-content: center;
+    height: 100vh;
+}
+.display{
+    text-align: center;
+    width: 100%;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 12px #b1acac ,
+                        5px 5px 12px #000;
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    font-size: 30px;
+    color: rgb(101, 9, 101);
+}
+h2{
+    font-size: 70px;
+}
+button{
+    font-size: 18px;
+    padding: 8px 14px;
+    margin: 0 40px;
+    border-radius: 10px;
+    border: 1px solid #b1acac;
+    cursor: pointer;
+}
+.positive{
+    color: green;
+}
+.negative{
+    color: red;
+}
+
+@media screen and (max-width:375px) {
+    
+.container{
+    display:grid;
+    place-content: center;
+    height: 100vh;
+}
+.display{
+    text-align: center;
+    width:80%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 12px #b1acac ,
+                        5px 5px 12px #000;
+    background-color: rgb(255, 255, 255);
+}
+form{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+button{
+    margin: 10px 0;
+}
+}
